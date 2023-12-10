@@ -32,14 +32,14 @@ class Passo3Widget extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
                       decorationColor: Color(0xff5A2683),
-                      fontSize: 18),
+                      fontSize: 16),
                 ),
                 Text(
                   ' CHAME O CHICO E PERGUNTE',
                   style: GoogleFonts.robotoCondensed(
                       color: Color(0xff5A2683),
                       fontWeight: FontWeight.bold,
-                      fontSize: 18),
+                      fontSize: 16),
                 ),
               ],
             ),

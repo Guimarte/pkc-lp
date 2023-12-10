@@ -14,7 +14,7 @@ class ClubesWidget extends StatelessWidget {
           borderRadius: BorderRadius.circular(24),
         ),
         child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 24),
+            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 24),
             child: Obx(() => Wrap(
                 alignment: WrapAlignment.center,
                 spacing: 48,
