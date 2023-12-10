@@ -38,14 +38,14 @@ class Passo2Widget extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
                       decorationColor: Colors.white,
-                      fontSize: 18),
+                      fontSize: 16),
                 ),
                 Text(
                   ' ASSISTA AO VÍDEO TUTORIAL',
                   style: GoogleFonts.robotoCondensed(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
-                      fontSize: 18),
+                      fontSize: 16),
                 ),
               ],
             ),
