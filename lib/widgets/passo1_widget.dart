@@ -17,11 +17,12 @@ class Passo1Widget extends StatelessWidget {
       color: Color(0xffF7F1F7),
       key: homeController.key1,
       child: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(8.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
                   "1º PASSO:",

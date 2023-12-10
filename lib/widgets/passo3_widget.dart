@@ -31,7 +31,7 @@ class Passo3Widget extends StatelessWidget {
                       color: Color(0xff5A2683),
                       fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
-                      decorationColor: Colors.white,
+                      decorationColor: Color(0xff5A2683),
                       fontSize: 18),
                 ),
                 Text(

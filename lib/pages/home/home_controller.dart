@@ -42,8 +42,10 @@ class HomeController extends GetxController {
   RxString selectedEstado = 'Estado'.obs;
   RxBool isAndroid = true.obs;
 
-  RxList<Widget> teams =
-      <Widget>[Text("(Nenhum clube vinculado a esse Estado)")].obs;
+  RxList<Widget> teams = <Widget>[
+    Text("(Nenhum clube vinculado a esse Estado)",
+        style: TextStyle(color: Color(0xff5A2683)))
+  ].obs;
 
   void changeState() {
     selectedStateController.value = SelectedStateController.selected;
@@ -119,7 +121,8 @@ class HomeController extends GetxController {
         );
       }
     } else {
-      teams.add(Text("(Nenhum clube vinculado a esse Estado)"));
+      teams.add(Text("(Nenhum clube vinculado a esse Estado)",
+          style: TextStyle(color: Color(0xff5A2683))));
     }
   }
 }
