@@ -31,33 +31,33 @@ class HomePage extends StatelessWidget {
           toolbarHeight: MediaQuery.sizeOf(context).height * 0.09,
           backgroundColor: const Color(0xff5A2684),
           title: Wrap(alignment: WrapAlignment.center, children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 8.0),
-                  child: Image.asset("assets/images/pkc_roxo.png",
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset("assets/images/pkc_roxo.png",
                       color: Colors.white,
                       width: MediaQuery.sizeOf(context).width * 0.2),
-                ),
-                Column(
-                  children: [
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8),
-                      child: Text(" GARANTA SEU BÔNUS!",
-                          style: GoogleFonts.robotoCondensed(
-                            fontSize: 28,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                            decorationColor: Theme.of(context).cardColor,
-                          )),
-                    ),
-                  ],
-                ),
-              ],
+                  Column(
+                    children: [
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8),
+                        child: Text(" GARANTA SEU BÔNUS!",
+                            style: GoogleFonts.robotoCondensed(
+                              fontSize: 28,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              decorationColor: Theme.of(context).cardColor,
+                            )),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ])),
       body: SingleChildScrollView(

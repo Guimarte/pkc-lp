@@ -16,9 +16,7 @@ class Passo2Widget extends StatelessWidget {
     videoId: 'oOW-dffmB1Q',
     autoPlay: false,
     params: const YoutubePlayerParams(
-        enableJavaScript: true,
-        showControls: true,
-        showFullscreenButton: false),
+        enableJavaScript: true, showControls: true, showFullscreenButton: true),
   );
 
   @override

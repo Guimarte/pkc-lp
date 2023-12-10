@@ -38,9 +38,12 @@ class FooterWidget extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            Text(
-              "Copyright © 2023 | Pokercup PKC Entretenimento e Serviços LTDA - CNPJ 48.048.512/0001-54",
-              style: TextStyle(fontSize: 8, color: Colors.white),
+            Center(
+              child: Text(
+                "Copyright © 2023 | Pokercup PKC Entretenimento e Serviços LTDA - CNPJ 48.048.512/0001-54",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 8, color: Colors.white),
+              ),
             )
           ],
         ));

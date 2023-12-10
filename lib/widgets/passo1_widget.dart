@@ -21,27 +21,30 @@ class Passo1Widget extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  "1º PASSO:",
-                  style: GoogleFonts.robotoCondensed(
-                      color: Color(0xff5A2684),
-                      fontWeight: FontWeight.w700,
-                      decoration: TextDecoration.underline,
-                      decorationColor: Color(0xff5A2684),
-                      fontSize: 18),
-                ),
-                Text(
-                  ' ONDE ESTÁ SEU CLUBE DO CORAÇÃO?',
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.robotoCondensed(
-                      color: Color(0xff5A2684),
-                      fontWeight: FontWeight.w700,
-                      fontSize: 18),
-                ),
-              ],
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "1º PASSO:",
+                    style: GoogleFonts.robotoCondensed(
+                        color: Color(0xff5A2684),
+                        fontWeight: FontWeight.w700,
+                        decoration: TextDecoration.underline,
+                        decorationColor: Color(0xff5A2684),
+                        fontSize: 18),
+                  ),
+                  Text(
+                    ' ONDE ESTÁ SEU CLUBE DO CORAÇÃO?',
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.robotoCondensed(
+                        color: Color(0xff5A2684),
+                        fontWeight: FontWeight.w700,
+                        fontSize: 18),
+                  ),
+                ],
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
