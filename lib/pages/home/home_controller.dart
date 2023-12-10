@@ -39,7 +39,7 @@ class HomeController extends GetxController {
   ].obs;
   RxString selectedRegiao = ''.obs;
   RxList<String> listaEstados = <String>[].obs;
-  RxString selectedEstado = 'Estado'.obs;
+  RxString selectedEstado = 'ESTADO'.obs;
   RxBool isAndroid = true.obs;
 
   RxList<Widget> teams = <Widget>[

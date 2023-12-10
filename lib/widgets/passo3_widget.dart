@@ -61,49 +61,50 @@ class Passo3Widget extends StatelessWidget {
                   height: 20,
                 ),
                 Container(
-                  width: MediaQuery.sizeOf(context).width * 0.6,
+                  width: MediaQuery.sizeOf(context).width * 0.8,
                   decoration: BoxDecoration(
                     color: Colors.red, // Cor de fundo vermelha
-                    borderRadius: BorderRadius.circular(8), // Borda arredondada
+                    border: Border.all(color: Colors.red.shade900, width: 5),
+                    borderRadius:
+                        BorderRadius.circular(16), // Borda arredondada
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.3),
-                        offset: Offset(
-                          5.0,
-                          5.0,
-                        ),
-                        blurRadius: 6,
-                      ),
-                      BoxShadow(
-                        color: Colors.black.withOpacity(0.3),
-                        offset: Offset(
-                          5.0,
-                          5.0,
-                        ),
-                        blurRadius: 6,
+                        color: Colors.red.withOpacity(0.8),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3),
                       ),
                     ],
                   ),
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.red,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(25),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        width: 3,
+                        color: Colors.white,
+                      ),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.red,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(25),
+                        ),
+                      ),
+                      onPressed: () {
+                        launchUrl(
+                            Uri.parse("https://wa.me/message/7UGBBZ5RYI5KB1"));
+                      },
+                      child: Text(
+                        'CHAMAR',
+                        style: GoogleFonts.robotoCondensed(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30),
                       ),
                     ),
-                    onPressed: () {
-                      launchUrl(
-                          Uri.parse("https://wa.me/message/7UGBBZ5RYI5KB1"));
-                    },
-                    child: Text(
-                      'CHAMAR',
-                      style: GoogleFonts.robotoCondensed(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 30),
-                    ),
                   ),
-                ),
+                )
               ],
             ),
           ),

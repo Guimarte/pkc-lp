@@ -15,7 +15,7 @@ class _DropDownRegioesState extends State<DropDownRegioes> {
   String _estadoSelecionado = 'Estado';
 
   List<String> estados = [
-    "Estado",
+    "ESTADO",
     "Acre",
     "Alagoas",
     "Amapá",
@@ -64,28 +64,27 @@ class _DropDownRegioesState extends State<DropDownRegioes> {
     return Obx(() => Container(
           decoration: BoxDecoration(
             color: Colors.red, // Cor de fundo vermelha
-            borderRadius: BorderRadius.circular(8), // Borda arredondada
+            border: Border.all(color: Colors.red.shade900, width: 5),
+            borderRadius: BorderRadius.circular(16), // Borda arredondada
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.3),
-                offset: Offset(
-                  5.0,
-                  5.0,
-                ),
-                blurRadius: 6,
-              ),
-              BoxShadow(
-                color: Colors.black.withOpacity(0.3),
-                offset: Offset(
-                  5.0,
-                  5.0,
-                ),
-                blurRadius: 6,
+                color: Colors.red.withOpacity(0.8),
+                spreadRadius: 5,
+                blurRadius: 7,
+                offset: Offset(0, 3),
               ),
             ],
           ),
-          child: DropdownButtonHideUnderline(
-            child: DropdownButton<String>(
+          child: Container(
+            decoration: BoxDecoration(
+              border: Border.all(
+                width: 3,
+                color: Colors.white,
+              ),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: DropdownButtonHideUnderline(
+              child: DropdownButton<String>(
                 itemHeight: 50,
                 value: homeController.selectedEstado.value,
                 alignment: Alignment.center,
@@ -98,16 +97,28 @@ class _DropDownRegioesState extends State<DropDownRegioes> {
                 items: estados.map<DropdownMenuItem<String>>((String estado) {
                   return DropdownMenuItem<String>(
                     value: estado,
-                    child: Center(child: Text(estado)),
+                    child: Center(
+                        child: Text(
+                      "     ${estado}",
+                      textAlign: TextAlign.center,
+                    )),
                   );
                 }).toList(),
                 style: GoogleFonts.robotoCondensed(
-                    color: Colors.black,
+                    color: Colors.white,
                     fontWeight: FontWeight.bold,
                     fontSize: 30),
                 elevation: 16,
+                icon: Icon(
+                  Icons.arrow_drop_down,
+                  color: Colors.white,
+                  size: 40,
+                ),
+                dropdownColor: Colors.red,
+                borderRadius: BorderRadius.circular(16),
                 menuMaxHeight: 200,
-                icon: Icon(Icons.arrow_drop_down)),
+              ),
+            ),
           ),
         ));
   }
