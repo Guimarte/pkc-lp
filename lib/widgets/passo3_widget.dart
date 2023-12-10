@@ -15,7 +15,7 @@ class Passo3Widget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.sizeOf(context).height * 0.23,
+      height: MediaQuery.sizeOf(context).height * 0.25,
       key: homeController.key3,
       color: const Color(0xffF7F1F7),
       child: Column(
