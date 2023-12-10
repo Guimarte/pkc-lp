@@ -99,7 +99,7 @@ class _DropDownRegioesState extends State<DropDownRegioes> {
                     value: estado,
                     child: Center(
                         child: Text(
-                      "     ${estado}",
+                      "${estado}",
                       textAlign: TextAlign.center,
                     )),
                   );
