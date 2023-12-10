@@ -1,21 +1,11 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pkc/pages/home/home_controller.dart';
-import 'package:pkc/widgets/banner_widget.dart';
-import 'package:pkc/widgets/botao_passo_widget.dart';
-import 'package:pkc/widgets/entre_no_clube_widget.dart';
 import 'package:pkc/widgets/footer_widget.dart';
-import 'package:pkc/widgets/parabens_widget.dart';
 import 'package:pkc/widgets/passo1_widget.dart';
 import 'package:pkc/widgets/passo2_widget.dart';
 import 'package:pkc/widgets/passo3_widget.dart';
-import 'package:pkc/widgets/selecione_widget.dart';
-import 'dart:html' as html;
-
-import 'package:stroke_text/stroke_text.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -23,8 +13,6 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     HomeController homeController = Get.find();
-    double width = MediaQuery.sizeOf(context).width;
-    double height = MediaQuery.sizeOf(context).height;
 
     return Scaffold(
       appBar: AppBar(
@@ -41,7 +29,7 @@ class HomePage extends StatelessWidget {
                       width: MediaQuery.sizeOf(context).width * 0.2),
                   Column(
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Padding(

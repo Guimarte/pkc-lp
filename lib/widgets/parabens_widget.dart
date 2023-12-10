@@ -10,7 +10,7 @@ class ParabensWidget extends StatelessWidget {
     return MediaQuery.sizeOf(context).width.isLowerThan(720)
         ? Container(
             width: MediaQuery.sizeOf(context).width * 1,
-            color: Color(0xffF7F1F7),
+            color: const Color(0xffF7F1F7),
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
@@ -21,8 +21,8 @@ class ParabensWidget extends StatelessWidget {
                     "PARABÉNS! AGORA VOCÊ É PKCEIRO!",
                     style: GoogleFonts.robotoCondensed(
                         decoration: TextDecoration.underline,
-                        decorationColor: Color(0xff5A2684),
-                        color: Color(0xff5A2684),
+                        decorationColor: const Color(0xff5A2684),
+                        color: const Color(0xff5A2684),
                         fontWeight: FontWeight.bold,
                         fontSize: 20),
                   ),
@@ -32,7 +32,7 @@ class ParabensWidget extends StatelessWidget {
                       textAlign: TextAlign.center,
                       "Você completou seu cadastro no Chippix! \n\nR\$30 já foram creditados \nna sua conta PKC no X-Poker. \n\nAgora você está pronto para ser \nCAMPEÃO da PKC!",
                       style: GoogleFonts.roboto(
-                          color: Color(0xff5A2684),
+                          color: const Color(0xff5A2684),
                           fontWeight: FontWeight.w300,
                           textStyle: Theme.of(context).textTheme.displayMedium),
                     ),
@@ -43,13 +43,13 @@ class ParabensWidget extends StatelessWidget {
                         style: GoogleFonts.smoochSans(
                             fontWeight: FontWeight.bold,
                             fontSize: 40,
-                            color: Color(0xff5A2684))),
+                            color: const Color(0xff5A2684))),
                     TextSpan(
                         text: "SEJA CAMPEÃO!",
                         style: GoogleFonts.smoochSans(
                             fontWeight: FontWeight.bold,
                             fontSize: 40,
-                            color: Color(0xffF5BD00)))
+                            color: const Color(0xffF5BD00)))
                   ]))
                 ],
               ),
@@ -57,7 +57,7 @@ class ParabensWidget extends StatelessWidget {
           )
         : Container(
             width: MediaQuery.sizeOf(context).width * 1,
-            color: Color(0xffF7F1F7),
+            color: const Color(0xffF7F1F7),
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
@@ -68,8 +68,8 @@ class ParabensWidget extends StatelessWidget {
                     "PARABÉNS! AGORA VOCÊ É PKCEIRO!",
                     style: GoogleFonts.robotoCondensed(
                         decoration: TextDecoration.underline,
-                        decorationColor: Color(0xff5A2684),
-                        color: Color(0xff5A2684),
+                        decorationColor: const Color(0xff5A2684),
+                        color: const Color(0xff5A2684),
                         fontWeight: FontWeight.bold,
                         fontSize: 36),
                   ),
@@ -79,7 +79,7 @@ class ParabensWidget extends StatelessWidget {
                       textAlign: TextAlign.center,
                       "Você completou seu cadastro no Chippix! \n\nR\$30 já foram creditados \nna sua conta PKC no X-Poker. \n\nAgora você está pronto para ser \nCAMPEÃO da PKC!",
                       style: GoogleFonts.roboto(
-                          color: Color(0xff5A2684),
+                          color: const Color(0xff5A2684),
                           fontWeight: FontWeight.w300,
                           textStyle: Theme.of(context)
                               .textTheme
@@ -93,13 +93,13 @@ class ParabensWidget extends StatelessWidget {
                         style: GoogleFonts.smoochSans(
                             fontWeight: FontWeight.bold,
                             fontSize: 80,
-                            color: Color(0xff5A2684))),
+                            color: const Color(0xff5A2684))),
                     TextSpan(
                         text: "SEJA CAMPEÃO!",
                         style: GoogleFonts.smoochSans(
                             fontWeight: FontWeight.bold,
                             fontSize: 80,
-                            color: Color(0xffF5BD00)))
+                            color: const Color(0xffF5BD00)))
                   ]))
                 ],
               ),

@@ -11,24 +11,24 @@ class FooterWidget extends StatelessWidget {
         color: const Color(0xff5A2684),
         width: MediaQuery.sizeOf(context).width * 1,
         height: MediaQuery.sizeOf(context).height * 0.2,
-        child: Column(
+        child: const Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Padding(
+                Padding(
                   padding: EdgeInsets.symmetric(horizontal: 8.0),
                   child: Icon(FontAwesomeIcons.facebook,
                       color: Colors.white, size: 40),
                 ),
-                const Padding(
+                Padding(
                   padding: EdgeInsets.symmetric(horizontal: 8.0),
                   child: Icon(FontAwesomeIcons.instagram,
                       color: Colors.white, size: 40),
                 ),
-                const Padding(
+                Padding(
                   padding: EdgeInsets.symmetric(horizontal: 8.0),
                   child: Icon(FontAwesomeIcons.youtube,
                       color: Colors.white, size: 40),

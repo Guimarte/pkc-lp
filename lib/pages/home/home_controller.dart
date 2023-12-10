@@ -43,7 +43,7 @@ class HomeController extends GetxController {
   RxBool isAndroid = true.obs;
 
   RxList<Widget> teams = <Widget>[
-    Text("(Nenhum clube vinculado a esse Estado)",
+    const Text("(Nenhum clube vinculado a esse Estado)",
         style: TextStyle(color: Color(0xff5A2683)))
   ].obs;
 
@@ -54,13 +54,13 @@ class HomeController extends GetxController {
   void scrollToStep(int step) {
     if (step == 1) {
       Scrollable.ensureVisible(key1.currentContext!,
-          curve: Curves.easeInOut, duration: Duration(seconds: 1));
+          curve: Curves.easeInOut, duration: const Duration(seconds: 1));
     } else if (step == 2) {
       Scrollable.ensureVisible(key2.currentContext!,
-          curve: Curves.easeInOut, duration: Duration(seconds: 1));
+          curve: Curves.easeInOut, duration: const Duration(seconds: 1));
     } else if (step == 3) {
       Scrollable.ensureVisible(key3.currentContext!,
-          curve: Curves.easeInOut, duration: Duration(seconds: 1)); //
+          curve: Curves.easeInOut, duration: const Duration(seconds: 1)); //
     }
   }
 
@@ -81,7 +81,7 @@ class HomeController extends GetxController {
   Future<void> getClubsStateRegion(String state) async {
     teams.clear();
     List<Club> clubs = await clubRepository.getClubsRegionState(state);
-    if (clubs != null && clubs.isNotEmpty) {
+    if ( clubs.isNotEmpty) {
       for (Club club in clubs) {
         teams.add(
           Obx(
@@ -121,7 +121,7 @@ class HomeController extends GetxController {
         );
       }
     } else {
-      teams.add(Text("(Nenhum clube vinculado a esse Estado)",
+      teams.add(const Text("(Nenhum clube vinculado a esse Estado)",
           style: TextStyle(color: Color(0xff5A2683))));
     }
   }

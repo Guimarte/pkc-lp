@@ -10,7 +10,7 @@ class EntreNoClube extends StatelessWidget {
     return MediaQuery.sizeOf(context).width.isLowerThan(720)
         ? Container(
             width: MediaQuery.sizeOf(context).width * 1,
-            color: Color(0xffF7F1F7),
+            color: const Color(0xffF7F1F7),
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
@@ -21,8 +21,8 @@ class EntreNoClube extends StatelessWidget {
                     "ENTRE NO SEU CLUBE",
                     style: GoogleFonts.robotoCondensed(
                         decoration: TextDecoration.underline,
-                        decorationColor: Color(0xff5A2684),
-                        color: Color(0xff5A2684),
+                        decorationColor: const Color(0xff5A2684),
+                        color: const Color(0xff5A2684),
                         fontWeight: FontWeight.bold,
                         fontSize: 20),
                   ),
@@ -32,7 +32,7 @@ class EntreNoClube extends StatelessWidget {
                       textAlign: TextAlign.center,
                       "Clique no link abaixo para se \ninscrever no clube que você escolheu. ",
                       style: GoogleFonts.roboto(
-                          color: Color(0xff5A2684),
+                          color: const Color(0xff5A2684),
                           fontWeight: FontWeight.w300,
                           fontSize: 14),
                     ),
@@ -40,15 +40,15 @@ class EntreNoClube extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           color: Color(0xff5A2684),
                           borderRadius: BorderRadius.all(Radius.circular(8))),
                       child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: 4),
-                              decoration: BoxDecoration(
+                              padding: const EdgeInsets.symmetric(horizontal: 4),
+                              decoration: const BoxDecoration(
                                   color: Colors.white,
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(8))),
@@ -58,14 +58,14 @@ class EntreNoClube extends StatelessWidget {
                                     "CLIQUE ",
                                     style: GoogleFonts.smoochSans(fontSize: 16),
                                   ),
-                                  Icon(
+                                  const Icon(
                                     Icons.arrow_forward,
                                     color: Color(0xff5A2684),
                                   )
                                 ],
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 40,
                             ),
                             Center(
@@ -84,22 +84,22 @@ class EntreNoClube extends StatelessWidget {
                     "Clique no link para tirar suas \n dúvidas com o Chico",
                     textAlign: TextAlign.center,
                     style: GoogleFonts.roboto(
-                        color: Color(0xff5A2684),
+                        color: const Color(0xff5A2684),
                         fontSize: 14,
                         fontWeight: FontWeight.w300),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           color: Color(0xffF5BD00),
                           borderRadius: BorderRadius.all(Radius.circular(8))),
                       child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: 4),
-                              decoration: BoxDecoration(
+                              padding: const EdgeInsets.symmetric(horizontal: 4),
+                              decoration: const BoxDecoration(
                                   color: Color(0xff5A2684),
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(8))),
@@ -110,14 +110,14 @@ class EntreNoClube extends StatelessWidget {
                                     style: GoogleFonts.smoochSans(
                                         fontSize: 16, color: Colors.white),
                                   ),
-                                  Icon(
+                                  const Icon(
                                     Icons.arrow_forward,
                                     color: Colors.white,
                                   )
                                 ],
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                             Center(
@@ -126,7 +126,7 @@ class EntreNoClube extends StatelessWidget {
                                 style: GoogleFonts.roboto(
                                     fontSize: 12,
                                     fontWeight: FontWeight.normal,
-                                    color: Color(0xff5A2684)),
+                                    color: const Color(0xff5A2684)),
                               ),
                             )
                           ]),
@@ -138,13 +138,13 @@ class EntreNoClube extends StatelessWidget {
                         style: GoogleFonts.smoochSans(
                             fontWeight: FontWeight.bold,
                             fontSize: 40,
-                            color: Color(0xff5A2684))),
+                            color: const Color(0xff5A2684))),
                     TextSpan(
                         text: "SEJA CAMPEÃO!",
                         style: GoogleFonts.smoochSans(
                             fontWeight: FontWeight.bold,
                             fontSize: 40,
-                            color: Color(0xffF5BD00)))
+                            color: const Color(0xffF5BD00)))
                   ]))
                 ],
               ),
@@ -152,7 +152,7 @@ class EntreNoClube extends StatelessWidget {
           )
         : Container(
             width: MediaQuery.sizeOf(context).width * 1,
-            color: Color(0xffF7F1F7),
+            color: const Color(0xffF7F1F7),
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
@@ -163,8 +163,8 @@ class EntreNoClube extends StatelessWidget {
                     "ENTRE NO SEU CLUBE",
                     style: GoogleFonts.robotoCondensed(
                         decoration: TextDecoration.underline,
-                        decorationColor: Color(0xff5A2684),
-                        color: Color(0xff5A2684),
+                        decorationColor: const Color(0xff5A2684),
+                        color: const Color(0xff5A2684),
                         fontWeight: FontWeight.bold,
                         fontSize: 36),
                   ),
@@ -174,7 +174,7 @@ class EntreNoClube extends StatelessWidget {
                       textAlign: TextAlign.center,
                       "Clique no link abaixo para se \ninscrever no clube que você escolheu. ",
                       style: GoogleFonts.roboto(
-                          color: Color(0xff5A2684),
+                          color: const Color(0xff5A2684),
                           fontWeight: FontWeight.w300,
                           fontSize: 30),
                     ),
@@ -182,7 +182,7 @@ class EntreNoClube extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0xff5A2684),
                         borderRadius: BorderRadius.all(Radius.circular(8)),
                       ),
@@ -190,8 +190,8 @@ class EntreNoClube extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Container(
-                            padding: EdgeInsets.symmetric(horizontal: 4),
-                            decoration: BoxDecoration(
+                            padding: const EdgeInsets.symmetric(horizontal: 4),
+                            decoration: const BoxDecoration(
                               color: Colors.white,
                               borderRadius:
                                   BorderRadius.all(Radius.circular(8)),
@@ -202,14 +202,14 @@ class EntreNoClube extends StatelessWidget {
                                   "CLIQUE ",
                                   style: GoogleFonts.smoochSans(fontSize: 32),
                                 ),
-                                Icon(
+                                const Icon(
                                   Icons.arrow_forward,
                                   color: Color(0xff5A2684),
                                 ),
                               ],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                               width:
                                   10), // Adjust the space between the two containers
                           Expanded(
@@ -233,7 +233,7 @@ class EntreNoClube extends StatelessWidget {
                     "Clique no link para tirar suas \n dúvidas com o Chico",
                     textAlign: TextAlign.center,
                     style: GoogleFonts.roboto(
-                      color: Color(0xff5A2684),
+                      color: const Color(0xff5A2684),
                       fontSize: 30,
                       fontWeight: FontWeight.w300,
                     ),
@@ -241,7 +241,7 @@ class EntreNoClube extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0xffF5BD00),
                         borderRadius: BorderRadius.all(Radius.circular(8)),
                       ),
@@ -249,8 +249,8 @@ class EntreNoClube extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Container(
-                            padding: EdgeInsets.symmetric(horizontal: 4),
-                            decoration: BoxDecoration(
+                            padding: const EdgeInsets.symmetric(horizontal: 4),
+                            decoration: const BoxDecoration(
                               color: Color(0xff5A2684),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(8)),
@@ -265,14 +265,14 @@ class EntreNoClube extends StatelessWidget {
                                     color: Colors.white,
                                   ),
                                 ),
-                                Icon(
+                                const Icon(
                                   Icons.arrow_forward,
                                   color: Colors.white,
                                 ),
                               ],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                               width:
                                   10), // Adjust the space between the two containers
                           Expanded(
@@ -283,7 +283,7 @@ class EntreNoClube extends StatelessWidget {
                                 style: GoogleFonts.roboto(
                                   fontSize: 24,
                                   fontWeight: FontWeight.normal,
-                                  color: Color(0xff5A2684),
+                                  color: const Color(0xff5A2684),
                                 ),
                               ),
                             ),
@@ -298,13 +298,13 @@ class EntreNoClube extends StatelessWidget {
                         style: GoogleFonts.smoochSans(
                             fontWeight: FontWeight.bold,
                             fontSize: 80,
-                            color: Color(0xff5A2684))),
+                            color: const Color(0xff5A2684))),
                     TextSpan(
                         text: "SEJA CAMPEÃO!",
                         style: GoogleFonts.smoochSans(
                             fontWeight: FontWeight.bold,
                             fontSize: 80,
-                            color: Color(0xffF5BD00)))
+                            color: const Color(0xffF5BD00)))
                   ]))
                 ],
               ),

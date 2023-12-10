@@ -11,8 +11,8 @@ class BannerWidget extends StatelessWidget {
         width: MediaQuery.sizeOf(context).width * 1,
         height: MediaQuery.sizeOf(context).height * 0.25,
         decoration: BoxDecoration(
-          border: Border.all(color: Color(0xffF5BD00), width: 8),
-          borderRadius: BorderRadius.all(
+          border: Border.all(color: const Color(0xffF5BD00), width: 8),
+          borderRadius: const BorderRadius.all(
             Radius.circular(40),
           ),
         ),

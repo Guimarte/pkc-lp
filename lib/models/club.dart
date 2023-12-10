@@ -18,9 +18,7 @@ class Club {
   });
 
   static List<Club> listFromJson(List<dynamic> json) {
-    return json == null
-        ? []
-        : json.map((value) => Club.fromJson(value)).toList();
+    return json.map((value) => Club.fromJson(value)).toList();
   }
 
   factory Club.fromJson(Map<String, dynamic> json) {

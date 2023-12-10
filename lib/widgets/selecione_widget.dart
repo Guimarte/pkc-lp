@@ -10,7 +10,7 @@ class SelecioneWidget extends StatelessWidget {
     return MediaQuery.sizeOf(context).width.isLowerThan(720)
         ? Container(
             width: MediaQuery.sizeOf(context).width * 1,
-            color: Color(0xff5A2684),
+            color: const Color(0xff5A2684),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -40,14 +40,14 @@ class SelecioneWidget extends StatelessWidget {
                       style: GoogleFonts.smoochSans(
                           fontWeight: FontWeight.bold,
                           fontSize: 40,
-                          color: Color(0xffF5BD00)))
+                          color: const Color(0xffF5BD00)))
                 ]))
               ],
             ),
           )
         : Container(
             width: MediaQuery.sizeOf(context).width * 1,
-            color: Color(0xff5A2684),
+            color: const Color(0xff5A2684),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -77,7 +77,7 @@ class SelecioneWidget extends StatelessWidget {
                       style: GoogleFonts.smoochSans(
                           fontWeight: FontWeight.bold,
                           fontSize: 60,
-                          color: Color(0xffF5BD00)))
+                          color: const Color(0xffF5BD00)))
                 ]))
               ],
             ),

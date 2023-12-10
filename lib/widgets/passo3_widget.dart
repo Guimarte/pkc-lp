@@ -2,20 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pkc/pages/home/home_controller.dart';
-import 'package:pkc/widgets/step_header_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:youtube_player_iframe/youtube_player_iframe.dart';
-
-import 'id_clube_widget.dart';
 
 class Passo3Widget extends StatelessWidget {
   Passo3Widget({super.key});
   HomeController homeController = Get.find();
 
+  buttonSize(BuildContext context) {
+    return MediaQuery.sizeOf(context).width *
+        (MediaQuery.sizeOf(context).width > 720 ? 0.25 : 0.80);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.sizeOf(context).height * 0.25,
+      //  height: MediaQuery.sizeOf(context).height * 0.25,
       key: homeController.key3,
       color: const Color(0xffF7F1F7),
       child: Column(
@@ -28,16 +29,16 @@ class Passo3Widget extends StatelessWidget {
                 Text(
                   '3º PASSO:',
                   style: GoogleFonts.robotoCondensed(
-                      color: Color(0xff5A2683),
+                      color: const Color(0xff5A2683),
                       fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
-                      decorationColor: Color(0xff5A2683),
+                      decorationColor: const Color(0xff5A2683),
                       fontSize: 16),
                 ),
                 Text(
                   ' CHAME O CHICO E PERGUNTE',
                   style: GoogleFonts.robotoCondensed(
-                      color: Color(0xff5A2683),
+                      color: const Color(0xff5A2683),
                       fontWeight: FontWeight.bold,
                       fontSize: 16),
                 ),
@@ -55,13 +56,13 @@ class Passo3Widget extends StatelessWidget {
                   style: GoogleFonts.robotoCondensed(
                       fontWeight: FontWeight.w700,
                       fontSize: 24,
-                      color: Color(0xff5A2683)),
+                      color: const Color(0xff5A2683)),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
-                  width: MediaQuery.sizeOf(context).width * 0.8,
+                  width: buttonSize(context),
                   decoration: BoxDecoration(
                     color: Colors.red, // Cor de fundo vermelha
                     border: Border.all(color: Colors.red.shade900, width: 5),
@@ -72,7 +73,7 @@ class Passo3Widget extends StatelessWidget {
                         color: Colors.red.withOpacity(0.8),
                         spreadRadius: 5,
                         blurRadius: 7,
-                        offset: Offset(0, 3),
+                        offset: const Offset(0, 3),
                       ),
                     ],
                   ),
@@ -104,6 +105,9 @@ class Passo3Widget extends StatelessWidget {
                       ),
                     ),
                   ),
+                ),
+                SizedBox(
+                  height: 24,
                 )
               ],
             ),
