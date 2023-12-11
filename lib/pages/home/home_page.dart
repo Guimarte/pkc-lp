@@ -24,9 +24,11 @@ class HomePage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset("assets/images/pkc_roxo.png",
-                      color: Colors.white,
-                      width: MediaQuery.sizeOf(context).width * 0.2),
+                  Image.asset(
+                    "assets/images/pkc_roxo.png",
+                    color: Colors.white,
+                    height: MediaQuery.sizeOf(context).height * 0.08,
+                  ),
                   Column(
                     children: [
                       const SizedBox(
