@@ -38,7 +38,9 @@ class HomePage extends StatelessWidget {
                         padding: const EdgeInsets.all(8),
                         child: Text(" GARANTA SEU BÔNUS!",
                             style: GoogleFonts.robotoCondensed(
-                              fontSize: 26,
+                              fontSize: MediaQuery.sizeOf(context).width < 400
+                                  ? 20
+                                  : 26,
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
                               decorationColor: Theme.of(context).cardColor,
