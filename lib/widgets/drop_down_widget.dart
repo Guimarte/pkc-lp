@@ -62,6 +62,7 @@ class _DropDownRegioesState extends State<DropDownRegioes> {
 
   Widget build(BuildContext context) {
     return Obx(() => Container(
+          width: MediaQuery.sizeOf(context).width * 0.8,
           decoration: BoxDecoration(
             color: Colors.red, // Cor de fundo vermelha
             border: Border.all(color: Colors.red.shade900, width: 5),
