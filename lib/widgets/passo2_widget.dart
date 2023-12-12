@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pkc/pages/home/home_controller.dart';
-import 'package:pkc/widgets/id_clube_widget.dart';
-import 'package:pkc/widgets/step_header_widget.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -70,7 +68,7 @@ class Passo2Widget extends StatelessWidget {
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               border: Border.all(color: Colors.white, width: 4)),
-          width: MediaQuery.sizeOf(context).width * 0.6,
+          width: MediaQuery.sizeOf(context).width * 0.5,
           // child: Image.asset('assets/images/fakevideo.png')
           child: YoutubePlayer(
             controller: _controller,
@@ -80,15 +78,18 @@ class Passo2Widget extends StatelessWidget {
       SizedBox(
         width: 5,
       ),
-      MediaQuery.sizeOf(context).width > 720
-          ? Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: conteudoBotoesLoja(context, false),
-            )
-          : Column(
-              children: conteudoBotoesLoja(context, true),
-            )
+      SizedBox(
+        width: MediaQuery.sizeOf(context).width * 0.3,
+        child: MediaQuery.sizeOf(context).width > 720
+            ? Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: conteudoBotoesLoja(context, false),
+              )
+            : Column(
+                children: conteudoBotoesLoja(context, true),
+              ),
+      )
     ];
   }
 
