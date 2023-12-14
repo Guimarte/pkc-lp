@@ -59,7 +59,7 @@ class HomePage extends StatelessWidget {
             Passo1Widget(),
             Passo2Widget(),
             Passo3Widget(),
-            const FooterWidget()
+            FooterWidget()
           ],
         ),
       ),

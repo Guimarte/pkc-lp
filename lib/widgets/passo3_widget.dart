@@ -27,7 +27,7 @@ class Passo3Widget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  '3º PASSO:',
+                  '3º PASSO',
                   style: GoogleFonts.robotoCondensed(
                       color: const Color(0xff5A2683),
                       fontWeight: FontWeight.bold,
@@ -36,7 +36,7 @@ class Passo3Widget extends StatelessWidget {
                       fontSize: 16),
                 ),
                 Text(
-                  ' CHAME O CHICO E PERGUNTE',
+                  ': CHAME O CHICO E PERGUNTE',
                   style: GoogleFonts.robotoCondensed(
                       color: const Color(0xff5A2683),
                       fontWeight: FontWeight.bold,
@@ -51,7 +51,7 @@ class Passo3Widget extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  "'OI! CHICO! CADÊ MEUS R\$30,00?!'",
+                  "'OI! CHICO! CADÊ MEUS R\$20???'",
                   textAlign: TextAlign.center,
                   style: GoogleFonts.robotoCondensed(
                       fontWeight: FontWeight.w700,

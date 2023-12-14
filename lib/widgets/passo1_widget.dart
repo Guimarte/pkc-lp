@@ -26,7 +26,7 @@ class Passo1Widget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "1º PASSO:",
+                  "1º PASSO",
                   style: GoogleFonts.robotoCondensed(
                       color: const Color(0xff5A2684),
                       fontWeight: FontWeight.w700,
@@ -35,7 +35,7 @@ class Passo1Widget extends StatelessWidget {
                       fontSize: 16),
                 ),
                 Text(
-                  ' ONDE ESTÁ SEU CLUBE DO CORAÇÃO?',
+                  ': ONDE ESTÁ SEU CLUBE DO CORAÇÃO?',
                   textAlign: TextAlign.center,
                   style: GoogleFonts.robotoCondensed(
                       color: const Color(0xff5A2684),

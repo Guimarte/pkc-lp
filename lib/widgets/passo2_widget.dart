@@ -30,7 +30,7 @@ class Passo2Widget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  '2º PASSO:',
+                  '2º PASSO',
                   style: GoogleFonts.robotoCondensed(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -39,7 +39,7 @@ class Passo2Widget extends StatelessWidget {
                       fontSize: 16),
                 ),
                 Text(
-                  ' ASSISTA AO VÍDEO TUTORIAL',
+                  ': ASSISTA AO VÍDEO TUTORIAL',
                   style: GoogleFonts.robotoCondensed(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -66,12 +66,23 @@ class Passo2Widget extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
         child: Container(
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Colors.white, width: 4)),
-          width: MediaQuery.sizeOf(context).width * 0.5,
-          // child: Image.asset('assets/images/fakevideo.png')
-          child: YoutubePlayer(
-            controller: _controller,
+            border: Border.all(color: Colors.white, width: 4),
+            borderRadius: BorderRadius.circular(8),
+          ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(6),
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+              ),
+              width: MediaQuery.of(context).size.width * 0.5,
+              child: AspectRatio(
+                aspectRatio: 16 / 9, // Defina a proporção desejada para o vídeo
+                child: YoutubePlayer(
+                  controller: _controller,
+                ),
+              ),
+            ),
           ),
         ),
       ),
